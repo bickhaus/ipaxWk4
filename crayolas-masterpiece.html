@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crayola's Masterpiece</title>
+<style>
+  :root{
+    --ink:#2c2c2a; --sub:#5f5e5a; --line:#d3d1c7; --strong:#888780;
+    --bg:#f7f6f2; --card:#ffffff;
+    --field:#eaf3de; --field-line:#639922;
+    --thruster-bg:#faeeda; --thruster-line:#ba7517; --thruster-text:#633806;
+    --mb:#993c1d; --carry:#3c3489;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:24px 16px 60px;
+  }
+  .wrap{max-width:680px;margin:0 auto}
+  h1{font-size:24px;font-weight:600;margin:0 0 4px}
+  .sub{color:var(--sub);font-size:14px;margin:0 0 20px}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:20px; margin-bottom:20px;
+  }
+  svg{display:block;width:100%;height:auto}
+  .flow{
+    display:flex; flex-wrap:wrap; align-items:center; gap:6px;
+    font-size:13px; color:var(--sub); margin-bottom:10px;
+  }
+  .chip{
+    display:inline-block; padding:4px 10px; border-radius:8px; font-size:12.5px;
+    border:1px solid var(--strong); background:var(--bg); color:var(--ink);
+  }
+  .arrow{color:var(--strong)}
+  .order{font-size:13.5px; color:var(--sub); margin:2px 0 18px}
+  table{width:100%;border-collapse:collapse;font-size:14.5px}
+  th{
+    text-align:left; font-weight:600; color:var(--sub);
+    border-bottom:1px solid var(--strong); padding:8px 10px; font-size:13px;
+    text-transform:uppercase; letter-spacing:.03em;
+  }
+  td{border-bottom:1px solid var(--line); padding:10px 10px}
+  tr:last-child td{border-bottom:none}
+  td:first-child{font-weight:600; white-space:nowrap; width:100px}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:30px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Crayola's Masterpiece</h1>
+  <p class="sub">45-minute AMRAP &middot; standard coupon &middot; 100-yard field marked in 10-yard increments &middot; every exercise is 10 reps</p>
+
+  <div class="card">
+    <svg viewBox="0 0 680 310" role="img" aria-label="Field map showing thrusters at the 50-yard line and exercise stations at the 40, 30, 20, 10, and goal line on both sides of the field">
+      <text x="60" y="40" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--sub)">G</text>
+      <text x="116" y="40" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--sub)">10</text>
+      <text x="172" y="40" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--sub)">20</text>
+      <text x="228" y="40" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--sub)">30</text>
+      <text x="284" y="40" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--sub)">40</text>
+      <text x="340" y="40" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="var(--ink)">50</text>
+      <text x="396" y="40" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--sub)">40</text>
+      <text x="452" y="40" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--sub)">30</text>
+      <text x="508" y="40" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--sub)">20</text>
+      <text x="564" y="40" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--sub)">10</text>
+      <text x="620" y="40" text-anchor="middle" dominant-baseline="central" font-size="12" fill="var(--sub)">G</text>
+
+      <rect x="60" y="56" width="560" height="150" rx="2" fill="var(--field)" stroke="var(--field-line)" stroke-width="1"/>
+      <g stroke="var(--field-line)" stroke-width="0.75">
+        <line x1="116" y1="56" x2="116" y2="206"/><line x1="172" y1="56" x2="172" y2="206"/>
+        <line x1="228" y1="56" x2="228" y2="206"/><line x1="284" y1="56" x2="284" y2="206"/>
+        <line x1="396" y1="56" x2="396" y2="206"/><line x1="452" y1="56" x2="452" y2="206"/>
+        <line x1="508" y1="56" x2="508" y2="206"/><line x1="564" y1="56" x2="564" y2="206"/>
+        <line x1="60" y1="56" x2="60" y2="206" stroke-width="2"/>
+        <line x1="620" y1="56" x2="620" y2="206" stroke-width="2"/>
+        <line x1="340" y1="56" x2="340" y2="206" stroke-width="2"/>
+      </g>
+
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </marker>
+      </defs>
+
+      <line x1="336" y1="80" x2="290" y2="80" stroke="var(--mb)" stroke-width="2.5" marker-end="url(#arrow)"/>
+      <line x1="280" y1="104" x2="66" y2="104" stroke="var(--carry)" stroke-width="2.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+      <g fill="var(--carry)"><circle cx="228" cy="104" r="3"/><circle cx="172" cy="104" r="3"/><circle cx="116" cy="104" r="3"/></g>
+
+      <line x1="290" y1="128" x2="390" y2="128" stroke="var(--mb)" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+
+      <line x1="400" y1="152" x2="614" y2="152" stroke="var(--carry)" stroke-width="2.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+      <g fill="var(--carry)"><circle cx="452" cy="152" r="3"/><circle cx="508" cy="152" r="3"/><circle cx="564" cy="152" r="3"/></g>
+
+      <line x1="392" y1="176" x2="346" y2="176" stroke="var(--mb)" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+      <g fill="var(--card)" stroke="var(--strong)" stroke-width="0.75">
+        <circle cx="284" cy="224" r="7"/><circle cx="228" cy="224" r="7"/><circle cx="172" cy="224" r="7"/>
+        <circle cx="116" cy="224" r="7"/><circle cx="60" cy="224" r="7"/>
+        <circle cx="396" cy="224" r="7"/><circle cx="452" cy="224" r="7"/><circle cx="508" cy="224" r="7"/>
+        <circle cx="564" cy="224" r="7"/><circle cx="620" cy="224" r="7"/>
+      </g>
+
+      <rect x="308" y="212" width="64" height="24" rx="5" fill="var(--thruster-bg)" stroke="var(--thruster-line)" stroke-width="1"/>
+      <text x="340" y="224" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="600" fill="var(--thruster-text)">Thrusters</text>
+
+      <line x1="60" y1="264" x2="88" y2="264" stroke="var(--mb)" stroke-width="2.5"/>
+      <text x="96" y="264" dominant-baseline="central" font-size="12" fill="var(--sub)">Murder bunny</text>
+
+      <line x1="214" y1="264" x2="242" y2="264" stroke="var(--mb)" stroke-width="2.5" stroke-dasharray="6 4"/>
+      <text x="250" y="264" dominant-baseline="central" font-size="12" fill="var(--sub)">Reverse murder bunny</text>
+
+      <line x1="420" y1="264" x2="448" y2="264" stroke="var(--carry)" stroke-width="2.5"/>
+      <text x="456" y="264" dominant-baseline="central" font-size="12" fill="var(--sub)">Carry block (out and back)</text>
+
+      <text x="60" y="290" dominant-baseline="central" font-size="12" fill="var(--sub)">Circles = exercise stations, done on both sides of the field</text>
+    </svg>
+  </div>
+
+  <div class="card">
+    <div class="flow">
+      <span class="chip">10 thrusters at 50</span><span class="arrow">&rarr;</span>
+      <span class="chip">MB to 40</span><span class="arrow">&rarr;</span>
+      <span class="chip">Carry to station, 10 reps, carry back</span><span class="arrow">&rarr;</span>
+      <span class="chip">Reverse MB to far 40</span><span class="arrow">&rarr;</span>
+      <span class="chip">Carry to station, 10 reps, carry back</span><span class="arrow">&rarr;</span>
+      <span class="chip">MB to 50</span>
+    </div>
+    <p class="order">Work your way out one station at a time: 40, 30, 20, 10, then the goal line &mdash; then it repeats.</p>
+
+    <table>
+      <thead><tr><th>Yard line</th><th>Exercise (10 reps)</th></tr></thead>
+      <tbody>
+        <tr><td>50</td><td>Thrusters (before every station)</td></tr>
+        <tr><td>40</td><td>Pullovers to knees to block</td></tr>
+        <tr><td>30</td><td>Manmakers</td></tr>
+        <tr><td>20</td><td>Curls to press to OH squat</td></tr>
+        <tr><td>10</td><td>BDE sit-ups</td></tr>
+        <tr><td>Goal line</td><td>Kraken burpees</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>45-minute AMRAP &mdash; count total reps completed</footer>
+</div>
+</body>
+</html>
